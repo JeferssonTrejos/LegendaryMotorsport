@@ -1,0 +1,247 @@
+{
+    "home": {
+        "hero_section": {
+            "url_background": "https://github.com/JeferssonTrejos/test-files/blob/main/LegendaryMotorsportFiles/assets/luxury-black-sports-car-dark-cinematic.jpg?raw=true",
+            "title": "DOMINA EL ASFALTO",
+            "description": "Descubre nuestra colección exclusiva de vehículos de alto rendimiento. Diseño, potencia y elegancia en cada kilómetro.",
+            "actions": [
+                "Ver Catálogo",
+                "Hablar con un Asesor"
+            ]
+        },
+        "why_us_section": {
+            "title": "POR QUÉ ELEGIRNOS",
+            "slogan": "No solo vendemos autos, ofrecemos una experiencia premiun con beeficios exclusivos.",
+            "benefits": [
+                {
+                    "title": "Garantía Extendida",
+                    "description": "Garantia total hasta 5 años o 100.000km."
+                },
+                {
+                    "title": "Financiamiento Flexible",
+                    "description": "Planes a tu medida con las mejores tasas."
+                },
+                {
+                    "title": "Entrega a Domicilio",
+                    "description": "Recibe tu nuevo vehículo donde quieras."
+                },
+                {
+                    "title": "Inspección Certificada",
+                    "description": "Ma de 150 puntos de revision tecnica."
+                },
+                {
+                    "title": "Servicio Post-Venta",
+                    "description": "Mantenimiento especializado incluido."
+                },
+                {
+                    "title": "Experiencia Premium",
+                    "description": "Atención personalizada y exclusiva."
+                }
+            ]
+        },
+        "Our_vehicles": {
+            "title": "NUESTROS VEHICULOS",
+            "options": [
+                {
+                    "type": "SEDAN",
+                    "detail": "Desde $18,999",
+                    "features": [
+                        "Motor 2.0L eficiente",
+                        "5 pasajeros cómodos",
+                        "Tecnología de seguridad",
+                        "Ideal para ciudad"
+                    ]
+                },
+                {
+                    "type": "SUV",
+                    "detail": "Desde $32,999",
+                    "features": [
+                        "Motor 3.5L potente",
+                        "7 pasajeros espaciosos",
+                        "Tracción 4x4",
+                        "Perfecto para aventuras"
+                    ]
+                },
+                {
+                    "type": "DEPORTIVO",
+                    "detail": "Desde $45,999",
+                    "features": [
+                        "Motor turbo 400HP",
+                        "0-100 km/h en 4.2s",
+                        "Diseño aerodinámico",
+                        "Máxima adrenalina"
+                    ]
+                }
+            ]
+        },
+        "testimonials_section": {
+            "title": "LO QUE DICEN NUESTROS CLIENTES",
+            "testimonials": [
+                {
+                    "client": "Carlos R",
+                    "clientType": "Empresario",
+                    "review": "La atención fue impecable. Encontraron exactamente el modelo que buscaba y el proceso fue rapidísimo."
+                },
+                {
+                    "client": "Ana M.",
+                    "clientType": "Arquitecta",
+                    "review": "El servicio post-venta es lo que realmente los diferencia. Me siento segura sabiendo que respaldan mi compra."
+                },
+                {
+                    "client": "David S.",
+                    "clientType": "Entusiasta",
+                    "review": "La calidad de los vehículos es superior. Se nota que seleccionan cuidadosamente cada unidad de su inventario."
+                }
+            ]
+        },
+        "faq_section": {
+            "title": "PREGUNTAS FRECUENTES",
+            "questions": [
+                {
+                    "question": "¿Ofrecen garantia en autos seminuevo?",
+                    "answer": "Si, todos nuestros vehículos seminuevos pasan por una inspección de 150 puntos y cuentan con garantía de 1 año."
+                },
+                {
+                    "question": "¿Puedo dejar mi vehiculo a cuenta?",
+                    "answer": "Absolutamente. Realizamos avalúos competitivos para tomar tu vehículo actual como parte del pago."
+                },
+                {
+                    "question": "¿Cuales son los requisitos para financiamiento?",
+                    "answer": "Identificación oficial, comprobante de domicilio y comprobantes de ingresos de los últimos 3 meses."
+                },
+                {
+                    "question": "¿Hacen envios a toda la republica?",
+                    "answer": "Sí, contamos con servicio de traslado seguro a cualquier parte del país."
+                },
+                {
+                    "question": "¿Puedo agendar un prueba de manejo?",
+                    "answer": "Claro, puedes agendar tu cita en línea o por teléfono para probar cualquier unidad disponible."
+                }
+            ]
+        }
+    },
+    "catalog": {
+        "catalog_section": {
+            "title": "CATÁLOGO",
+            "description": "Explora nuestra selección de vehículos premium."
+        },
+        "vehicles": [
+            {
+                "year": "2024",
+                "type": "DEPORTIVO",
+                "url_img": "https://github.com/JeferssonTrejos/test-files/blob/main/LegendaryMotorsportFiles/assets/porsche-911-gt3-black.jpg?raw=true",
+                "model": "Porsche 911 GT3",
+                "rating": "5",
+                "price": "$220,000",
+                "action": "Ver Detalles"
+            },
+            {
+                "year": "2023",
+                "type": "DEPORTIVO",
+                "url_img": "https://github.com/JeferssonTrejos/test-files/blob/main/LegendaryMotorsportFiles/assets/mercedes-amg-gt-grey.jpg?raw=true",
+                "model": "Mercedes-AMG GT",
+                "rating": "4.9",
+                "price": "$180,000",
+                "action": "Ver Detalles"
+            },
+            {
+                "year": "2024",
+                "type": "ELÉCTRICO",
+                "url_img": "https://github.com/JeferssonTrejos/test-files/blob/main/LegendaryMotorsportFiles/assets/audi-rs3-green.jpg?raw=true",
+                "model": "Audi R5 e-tron GT",
+                "rating": "4.9",
+                "price": "$145,000",
+                "action": "Ver Detalles"
+            },
+            {
+                "year": "2023",
+                "type": "COUPÉ",
+                "url_img": "https://github.com/JeferssonTrejos/test-files/blob/main/LegendaryMotorsportFiles/assets/bmw-m4-competition.jpg?raw=true",
+                "model": "BMW M4 Competition",
+                "rating": "4.7",
+                "price": "$95,000",
+                "action": "Ver Detalles"
+            },
+            {
+                "year": "2024",
+                "type": "SUV",
+                "url_img": "https://github.com/JeferssonTrejos/test-files/blob/main/LegendaryMotorsportFiles/assets/land-rover-defender-black.jpg?raw=true",
+                "model": "Land Rover Defender",
+                "rating": "4.8",
+                "price": "$85,000",
+                "action": "Ver Detalles"
+            },
+            {
+                "year": "2024",
+                "type": "ELÉCTRICO",
+                "url_img": "https://github.com/JeferssonTrejos/test-files/blob/main/LegendaryMotorsportFiles/assets/tesla-model-s-plaid.jpg?raw=true",
+                "model": "Tesla Model S Plaid",
+                "rating": "4.6",
+                "price": "$110,000",
+                "action": "Ver Detalles"
+            }
+        ]
+    },
+    "offer": {
+        "black_week_section": {
+            "title_primary": "OFERTAS DE TEMPORADA",
+            "title_secondary": "BLACK WEEK",
+            "description": "Descuentos exclusivos en modelos seleccionados. Solo por tiempo limitado.",
+            "countdown": [
+                "02 Días",
+                "14 Horas",
+                "45 Minutos"
+            ]
+        },
+        "promotions_section": [
+            {
+                "model": "BMW M2",
+                "url_img": "https://github.com/JeferssonTrejos/test-files/blob/main/LegendaryMotorsportFiles/assets/bmw-m2-blue.jpg?raw=true",
+                "price_current": "$68,000",
+                "price_original": "$75,000",
+                "payment_info": "Expira en 2 días",
+                "stock": "3 unidades disponibles"
+            },
+            {
+                "model": "Audi RS3 Sportback",
+                "url_img": "https://github.com/JeferssonTrejos/test-files/blob/main/LegendaryMotorsportFiles/assets/audi-rs-etron-gt.png?raw=true",
+                "price_current": "$58,500",
+                "price_original": "$65,000",
+                "payment_info": "Expira en 2 días",
+                "stock": "2 unidades disponibles"
+            },
+            {
+                "model": "Ford Mustang GT",
+                "url_img": "https://github.com/JeferssonTrejos/test-files/blob/main/LegendaryMotorsportFiles/assets/mustang-gt-red.jpg?raw=true",
+                "price_current": "$46,750",
+                "price_original": "$55,000",
+                "payment_info": "Expira en 2 días",
+                "stock": "3 unidades disponibles"
+            },
+            {
+                "model": "Toyota Supra GR",
+                "url_img": "https://github.com/JeferssonTrejos/test-files/blob/main/LegendaryMotorsportFiles/assets/toyota-supra-yellow.jpg?raw=true",
+                "price_current": "$52,200",
+                "price_original": "$58,000",
+                "payment_info": "Expira en 2 días",
+                "stock": "4 unidades disponibles"
+            },
+            {
+                "model": "Chevrolet Corvette C8",
+                "url_img": "https://github.com/JeferssonTrejos/test-files/blob/main/LegendaryMotorsportFiles/assets/corvette-c8-white.jpg?raw=true",
+                "price_current": "$76,500",
+                "price_original": "$85,000",
+                "payment_info": "Expira en 2 días",
+                "stock": "3 unidades disponibles"
+            },
+            {
+                "model": "Nissan GT-R",
+                "url_img": "https://github.com/JeferssonTrejos/test-files/blob/main/LegendaryMotorsportFiles/assets/nissan-gtr-grey.jpg?raw=true",
+                "price_current": "$97,750",
+                "price_original": "$115,000",
+                "payment_info": "Expira en 2 días",
+                "stock": "2 unidades disponibles"
+            }
+        ]
+    }
+}
