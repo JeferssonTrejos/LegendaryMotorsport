@@ -15,7 +15,7 @@ const Header = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <header className="bg-custom-black-1-60 text-custom-white-3 fixed w-full top-0 z-50 border-b-2 border-custom-black-4">
+    <header className="bg-custom-black-1-60 backdrop-blur-md text-custom-white-3 fixed w-full top-0 z-50 border-b-2 border-custom-black-4">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
 
