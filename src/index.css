@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 @theme {
   --color-custom-black-1: #000000;
   --color-custom-black-1-60: rgba(0, 0, 0, 0.6);
@@ -18,4 +20,7 @@
   --color-custom-white-5: #8e8e93;
 
   --color-custom-green-1: #34c759;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
 }

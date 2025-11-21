@@ -3,9 +3,9 @@ import Header from "./Header";
 
 export const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="bg-custom-black-1">
       <Header />
-      <main className="flex-1 overflow-y-auto mt-16 bg-custom-black-1  min-h-dvh">
+      <main className="flex-1 overflow-y-auto pt-16 min-h-dvh">
         {children}
       </main>
       <Footer />
