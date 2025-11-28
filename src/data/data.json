@@ -165,19 +165,37 @@
             {
                 "year": "2024",
                 "type": "SUV",
-                "url_img": "https://github.com/JeferssonTrejos/test-files/blob/main/LegendaryMotorsportFiles/assets/land-rover-defender-black.jpg?raw=true",
-                "model": "Land Rover Defender",
+                "url_img": "https://i.pinimg.com/736x/a8/cb/d4/a8cbd4468c9e6fbb1a3287198e1e7178.jpg",
+                "model": "Mercedes-Benz G-Wagon",
                 "rating": "4.8",
-                "price": "$85,000",
+                "price": "$175,000",
                 "action": "Ver Detalles"
             },
             {
                 "year": "2024",
                 "type": "ELÉCTRICO",
-                "url_img": "https://github.com/JeferssonTrejos/test-files/blob/main/LegendaryMotorsportFiles/assets/tesla-model-s-plaid.jpg?raw=true",
+                "url_img": "https://i.pinimg.com/1200x/32/2c/88/322c885edaaf4e3b715bf6249b3e1e00.jpg",
                 "model": "Tesla Model S Plaid",
                 "rating": "4.6",
                 "price": "$110,000",
+                "action": "Ver Detalles"
+            },
+            {
+                "year": "2024",
+                "type": "DEPORTIVO",
+                "url_img": "https://rapidvehicles.com/cdn/shop/articles/black_maserati_gran_turismo_2287520155_edd42920-b8c2-4ac6-a2a0-1c1c5e3391b5.png?v=1746034771",
+                "model": "Maserati GranTurismo",
+                "rating": "4.8",
+                "price": "$185,000",
+                "action": "Ver Detalles"
+            },
+            {
+                "year": "2024",
+                "type": "DEPORTIVO",
+                "url_img": "https://i.pinimg.com/1200x/f6/bc/c1/f6bcc144738a3b2600ceef091683ac6a.jpg",
+                "model": "Ford GT",
+                "rating": "5.0",
+                "price": "$500,000",
                 "action": "Ver Detalles"
             }
         ]
