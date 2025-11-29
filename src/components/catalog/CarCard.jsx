@@ -2,21 +2,10 @@ const CarCard = ({ vehicle, viewMode }) => {
   const { type, url_img, model, price, action } = vehicle;
 
   // Determinar el color del badge según el tipo
+  // Determinar el color del badge según el tipo
   const getBadgeColor = (type) => {
-    switch (type?.toUpperCase()) {
-      case "DEPORTIVO":
-        return "text-custom-red-1";
-      case "ELÉCTRICO":
-        return "text-custom-red-1";
-      case "SUV":
-        return "text-custom-red-1";
-      case "SEDAN":
-        return "text-custom-red-1";
-      case "COUPÉ":
-        return "text-custom-red-1";
-      default:
-        return "text-custom-red-1";
-    }
+    // Por ahora todos usan el mismo color, pero mantenemos la función para futura extensibilidad
+    return "text-custom-red-1";
   };
 
   if (viewMode === "list") {

@@ -20,7 +20,7 @@ const CarGrid = ({ vehicles, viewMode }) => {
       }
     >
       {vehicles.map((vehicle, index) => (
-        <CarCard key={index} vehicle={vehicle} viewMode={viewMode} />
+        <CarCard key={vehicle.id || index} vehicle={vehicle} viewMode={viewMode} />
       ))}
     </div>
   );

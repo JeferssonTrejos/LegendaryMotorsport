@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Check, ChevronDown, ChevronUp } from "lucide-react";
 
 const Filters = ({ filters, onFilterChange }) => {
   const [isMarquesOpen, setIsMarquesOpen] = useState(true);
@@ -36,6 +37,7 @@ const Filters = ({ filters, onFilterChange }) => {
             value={filters.maxPrice}
             onChange={handlePriceChange}
             className="w-full h-1 bg-custom-black-4 rounded-lg appearance-none cursor-pointer accent-custom-red-1"
+            aria-label="Filtrar por precio máximo"
           />
           <div className="flex justify-between text-custom-white-5 text-sm mt-2">
             <span>$0</span>
@@ -54,26 +56,13 @@ const Filters = ({ filters, onFilterChange }) => {
               className="flex items-center gap-3 cursor-pointer group"
             >
               <div
-                className={`w-4 h-4 border rounded flex items-center justify-center transition-colors ${
-                  filters.types.includes(type)
-                    ? "bg-custom-red-1 border-custom-red-1"
-                    : "border-custom-white-5 group-hover:border-custom-white-1"
-                }`}
+                className={`w-4 h-4 border rounded flex items-center justify-center transition-colors ${filters.types.includes(type)
+                  ? "bg-custom-red-1 border-custom-red-1"
+                  : "border-custom-white-5 group-hover:border-custom-white-1"
+                  }`}
               >
                 {filters.types.includes(type) && (
-                  <svg
-                    className="w-3 h-3 text-white"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={3}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
+                  <Check className="w-3 h-3 text-white" />
                 )}
               </div>
               <span className="text-custom-white-4 group-hover:text-custom-white-1 transition-colors">
@@ -92,23 +81,14 @@ const Filters = ({ filters, onFilterChange }) => {
           <button
             onClick={() => setIsMarquesOpen(!isMarquesOpen)}
             className="w-full flex items-center justify-between bg-custom-black-3 border border-custom-black-4 rounded-md px-4 py-2 text-custom-white-4 hover:border-custom-white-5 transition-colors"
+            aria-label="Alternar menú de marcas"
           >
             <span>{filters.brand || "Todas las marcas"}</span>
-            <svg
-              className={`w-4 h-4 transition-transform ${
-                isMarquesOpen ? "rotate-180" : ""
-              }`}
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
+            {isMarquesOpen ? (
+              <ChevronUp className="w-4 h-4" />
+            ) : (
+              <ChevronDown className="w-4 h-4" />
+            )}
           </button>
 
           {/* Lista de marcas */}
@@ -118,11 +98,10 @@ const Filters = ({ filters, onFilterChange }) => {
                 <button
                   key={brand}
                   onClick={() => handleBrandChange(brand)}
-                  className={`w-full text-left px-4 py-2 transition-colors ${
-                    filters.brand === brand
-                      ? "bg-custom-black-4 text-custom-white-1"
-                      : "text-custom-white-4 hover:bg-custom-black-4 hover:text-custom-white-1"
-                  }`}
+                  className={`w-full text-left px-4 py-2 transition-colors ${filters.brand === brand
+                    ? "bg-custom-black-4 text-custom-white-1"
+                    : "text-custom-white-4 hover:bg-custom-black-4 hover:text-custom-white-1"
+                    }`}
                 >
                   {brand}
                 </button>
