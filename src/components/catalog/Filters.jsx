@@ -4,7 +4,7 @@ import { Check, ChevronDown, ChevronUp } from "lucide-react";
 const Filters = ({ filters, onFilterChange }) => {
   const [isMarquesOpen, setIsMarquesOpen] = useState(true);
 
-  const vehicleTypes = ["Deportivo", "SUV", "Electrico", "Coupé"];
+  const vehicleTypes = ["DEPORTIVO", "SUV", "ELÉCTRICO", "COUPÉ"];
   const brands = ["Porsche", "Mercedes", "Audi", "BMW", "Tesla", "Maserati", "Ford"];
 
   const handleTypeChange = (type) => {
@@ -21,6 +21,13 @@ const Filters = ({ filters, onFilterChange }) => {
 
   const handlePriceChange = (e) => {
     onFilterChange({ ...filters, maxPrice: parseInt(e.target.value) });
+  };
+
+  // Formatear el precio para mostrar
+  const formatPrice = (price) => {
+    if (price >= 500000) return "$500K+";
+    if (price >= 1000) return `$${(price / 1000).toFixed(0)}K`;
+    return `$${price}`;
   };
 
   return (
@@ -41,6 +48,9 @@ const Filters = ({ filters, onFilterChange }) => {
           />
           <div className="flex justify-between text-custom-white-5 text-sm mt-2">
             <span>$0</span>
+            <span className="text-custom-white-1 font-medium">
+              Hasta: {formatPrice(filters.maxPrice)}
+            </span>
             <span>$500K+</span>
           </div>
         </div>
@@ -54,6 +64,7 @@ const Filters = ({ filters, onFilterChange }) => {
             <label
               key={type}
               className="flex items-center gap-3 cursor-pointer group"
+              onClick={() => handleTypeChange(type)}
             >
               <div
                 className={`w-4 h-4 border rounded flex items-center justify-center transition-colors ${filters.types.includes(type)

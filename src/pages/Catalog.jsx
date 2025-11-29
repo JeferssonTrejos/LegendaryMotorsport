@@ -28,11 +28,11 @@ const Catalog = () => {
       const priceNumber = parseInt(vehicle.price.replace(/[$,]/g, ""));
       const matchesPrice = priceNumber <= filters.maxPrice;
 
-      // Filtro de tipo
+      // Filtro de tipo (case-insensitive)
       const matchesType =
         filters.types.length === 0 ||
         filters.types.some(
-          (type) => type.toLowerCase() === vehicle.type.toLowerCase()
+          (type) => type.toUpperCase() === vehicle.type.toUpperCase()
         );
 
       // Filtro de marca
