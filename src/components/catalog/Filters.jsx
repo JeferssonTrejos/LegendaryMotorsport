@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Check, ChevronDown, ChevronUp } from "lucide-react";
 
 const Filters = ({ filters, onFilterChange }) => {
-  const [isMarquesOpen, setIsMarquesOpen] = useState(true);
+  const [isMarquesOpen, setIsMarquesOpen] = useState(false);
 
   const vehicleTypes = ["DEPORTIVO", "SUV", "ELÉCTRICO", "COUPÉ"];
   const brands = ["Porsche", "Mercedes", "Audi", "BMW", "Tesla", "Maserati", "Ford"];

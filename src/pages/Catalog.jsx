@@ -6,7 +6,7 @@ import catalogData from "../data/data.json";
 
 const Catalog = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [viewMode, setViewMode] = useState("list");
+  const [viewMode, setViewMode] = useState("grid");
   const [filters, setFilters] = useState({
     maxPrice: 500000,
     types: [],
