@@ -6,6 +6,7 @@ import catalogData from "../data/data.json";
 
 const Catalog = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [showMobileFilters, setShowMobileFilters] = useState(false);
   const [viewMode, setViewMode] = useState("grid");
   const [filters, setFilters] = useState({
     maxPrice: 500000,
@@ -47,7 +48,7 @@ const Catalog = () => {
   return (
     <div className="container mx-auto text-custom-white-1 mt-10 px-4">
       {/* Sección de título y búsqueda */}
-      <section className="flex items-start justify-between mb-8">
+      <section className="flex flex-col md:flex-row items-start justify-between mb-8 gap-4 md:gap-0">
         <div>
           <h1 className="text-4xl font-bold tracking-wide">
             {catalog_section.title}
@@ -64,10 +65,21 @@ const Catalog = () => {
         />
       </section>
 
+      {/* Botón de filtros móvil */}
+      <button
+        className="md:hidden w-full bg-custom-black-3 border border-custom-black-4 text-custom-white-1 py-2 rounded mb-6 flex items-center justify-center gap-2 hover:bg-custom-black-4 transition-colors"
+        onClick={() => setShowMobileFilters(!showMobileFilters)}
+      >
+        <span>{showMobileFilters ? "Ocultar Filtros" : "Mostrar Filtros"}</span>
+      </button>
+
       {/* Sección principal */}
-      <section className="flex gap-8 min-h-[600px]">
+      <section className="flex flex-col md:flex-row gap-8 min-h-[600px]">
         {/* Panel de filtros */}
-        <aside className="w-64 shrink-0">
+        <aside
+          className={`w-full md:w-64 shrink-0 ${showMobileFilters ? "block" : "hidden"
+            } md:block`}
+        >
           <Filters filters={filters} onFilterChange={setFilters} />
         </aside>
 
